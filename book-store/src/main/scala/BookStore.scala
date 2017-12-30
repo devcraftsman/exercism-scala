@@ -42,6 +42,41 @@ object BookStore {
 
   }
 
+  /**
+    * The splitting algorith:
+    *  1 - if does not exists a group, create a new group (duplicates could never appear in the same group)
+    *  2 - if exists a group, that does not contains the book, and it is smaller that the maxLenght, add the book
+    *  3 - repeat with all the existing groups
+    *  4 - fold all the groups together to get the actual partition of the original book list
+    *
+    * @param books
+    * @param maxL
+    * @return
+    */
+  def splitBooks(books: List[Int], maxL: Int) : List[List[Int]]= {
+
+    def divideElements(b: Int, ll: List[List[Int]]) : List[List[Int]] =
+      ll match {
+        case Nil => List(b) :: ll
+        case x :: xs if (!x.contains(b) && x.size < maxL) => (b :: x) :: xs
+        case x :: xs =>  x :: divideElements(b,xs)
+      }
+
+    books.foldLeft((List[List[Int]]()))((ll, b) => {
+      divideElements(b, ll)
+    })
+  }
+
+  /**
+    * List all the possible groups in which you can divide the book list for each length from 1 to books.length
+    * @param books
+    * @return
+    */
+  def bookPairs(books: List[Int]): List[List[List[Int]]] = {
+    (1 to books.length).map(len =>splitBooks(books, len)).toList
+
+  }
+
 
   /**
     * To get the total cost split the book list in all the possible combination of groups
@@ -62,39 +97,6 @@ object BookStore {
 
   }
 
-  /**
-    * The splitting algorith:
-    *  1 - if does not exists a group, create a new group (duplicates could never appear in the same group)
-    *  2 - if exists a group, that does not contains the book, and it is smaller that the maxLenght, add the book
-    *  3 - repeat with all the existing groups
-    *  4 - fold all the groups together to get the actual partition of the original book list
-    *
-    * @param books
-    * @param maxL
-    * @return
-    */
-  def splitBooks(books: List[Int], maxL: Int) : List[List[Int]]= {
 
-    def divideElements(b: Int, ll: List[List[Int]]) : List[List[Int]] =
-      ll match {
-        case Nil => List(b) :: ll
-        case x :: xs if (!x.contains(b) && x.size < maxL) => (b :: x) :: xs
-        case x :: xs =>  x :: divideElements(b,xs)
-    }
-
-    books.foldLeft((List[List[Int]]()))((ll, b) => {
-      divideElements(b, ll)
-    })
-  }
-
-  /**
-    * List all the possible groups in which you can divide the book list for each length from 1 to books.length
-    * @param books
-    * @return
-    */
-  def bookPairs(books: List[Int]): List[List[List[Int]]] = {
-    (1 to books.length).map(len =>splitBooks(books, len)).toList
-
-  }
 
 }
