@@ -73,6 +73,11 @@ lazy val matrix = (project in file("matrix"))
     commonSettings
   )
 
+lazy val pangram = (project in file("pangram"))
+  .settings(
+    commonSettings
+  )
+
 lazy val perfectNumbers = (project in file("perfect-numbers"))
   .settings(
     commonSettings
