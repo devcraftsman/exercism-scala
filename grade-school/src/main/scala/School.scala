@@ -1,9 +1,9 @@
-import scala.collection.immutable.ListMap
+
 
 class School {
   type DB = Map[Int, Seq[String]]
 
-  var indb : Map[Int, Seq[String]] = ???
+  var indb: Map[Int, Seq[String]] = Map.empty
 
   def add(name: String, g: Int) = indb get g match {
     case Some(s : Seq[String]) =>  indb = indb + (g -> (s :+ name))
