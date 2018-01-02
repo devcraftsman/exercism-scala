@@ -83,6 +83,12 @@ lazy val perfectNumbers = (project in file("perfect-numbers"))
     commonSettings
   )
 
+lazy val raindrops = (project in file("raindrops"))
+  .settings(
+    commonSettings
+  )
+
+
 lazy val robotSimulator = (project in file("robot-simulator"))
   .settings(
     commonSettings
