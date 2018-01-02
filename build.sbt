@@ -26,6 +26,13 @@ lazy val collatzConjecture = (project in file("collatz-conjecture"))
     commonSettings
   )
 
+lazy val differenceOfSquares = (project in file("difference-of-squares"))
+  .settings(
+    commonSettings
+  )
+
+
+
 lazy val etl = (project in file("etl"))
   .settings(
     commonSettings
