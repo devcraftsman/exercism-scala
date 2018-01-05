@@ -109,6 +109,11 @@ lazy val spaceAge = (project in file("space-age"))
     commonSettings
   )
 
+lazy val strain = (project in file("strain"))
+  .settings(
+    commonSettings
+  )
+
 lazy val sumOfMultiples = (project in file("sum-of-multiples"))
   .settings(
     commonSettings
