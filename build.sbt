@@ -83,6 +83,11 @@ lazy val perfectNumbers = (project in file("perfect-numbers"))
     commonSettings
   )
 
+lazy val phoneNumber = (project in file("phone-number"))
+  .settings(
+    commonSettings
+  )
+
 lazy val raindrops = (project in file("raindrops"))
   .settings(
     commonSettings
