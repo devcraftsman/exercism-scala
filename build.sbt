@@ -93,6 +93,10 @@ lazy val raindrops = (project in file("raindrops"))
     commonSettings
   )
 
+lazy val robotName = (project in file("robot-name"))
+  .settings(
+    commonSettings
+  )
 
 lazy val robotSimulator = (project in file("robot-simulator"))
   .settings(
