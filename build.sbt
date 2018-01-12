@@ -53,6 +53,11 @@ lazy val gradeSchool = (project in file("grade-school"))
     commonSettings
   )
 
+lazy val grains = (project in file("grains"))
+  .settings(
+    commonSettings
+  )
+
 lazy val hamming = (project in file("hamming"))
   .settings(
     commonSettings
