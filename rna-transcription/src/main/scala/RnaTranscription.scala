@@ -1,3 +1,5 @@
+
+
 object RnaTranscription {
 
   /*
@@ -8,10 +10,11 @@ object RnaTranscription {
    */
 
   def toRna(str: String): Option[String] = {
-    val op: List[Option[String]] = str.toList.map(transcript(_))
+    val op = str.map(transcript(_))
     if (op.contains(None)) None
     else op.foldLeft(None: Option[String])((acc, o) => o.map(s => acc.getOrElse("") + s))
   }
+
 
   def transcript(c: Char): Option[String] = c match {
     case 'G' => Some("C")
