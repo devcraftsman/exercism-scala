@@ -98,6 +98,14 @@ lazy val raindrops = (project in file("raindrops"))
     commonSettings
   )
 
+lazy val rnaTranscription = (project in file("rna-transcription"))
+  .settings(
+    commonSettings
+  )
+
+
+
+
 lazy val robotName = (project in file("robot-name"))
   .settings(
     commonSettings
