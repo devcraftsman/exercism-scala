@@ -104,8 +104,6 @@ lazy val rnaTranscription = (project in file("rna-transcription"))
   )
 
 
-
-
 lazy val robotName = (project in file("robot-name"))
   .settings(
     commonSettings
@@ -140,3 +138,9 @@ lazy val sumOfMultiples = (project in file("sum-of-multiples"))
   .settings(
     commonSettings
   )
+
+lazy val triangle = (project in file("triangle"))
+  .settings(
+    commonSettings
+  )
+
