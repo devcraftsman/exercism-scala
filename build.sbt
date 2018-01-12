@@ -108,6 +108,11 @@ lazy val robotSimulator = (project in file("robot-simulator"))
     commonSettings
   )
 
+lazy val scrabbleScore = (project in file("scrabble-score"))
+  .settings(
+    commonSettings
+  )
+
 lazy val secretHandshake = (project in file("secret-handshake"))
   .settings(
     commonSettings
