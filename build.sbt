@@ -16,6 +16,13 @@ lazy val bob = (project in file("bob"))
     commonSettings
   )
 
+lazy val binarySearch = (project in file("binary-search"))
+  .settings(
+    commonSettings
+  )
+
+
+
 lazy val bookStore = (project in file("book-store"))
   .settings(
     commonSettings
