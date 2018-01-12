@@ -22,7 +22,6 @@ lazy val binarySearch = (project in file("binary-search"))
   )
 
 
-
 lazy val bookStore = (project in file("book-store"))
   .settings(
     commonSettings
@@ -130,6 +129,12 @@ lazy val secretHandshake = (project in file("secret-handshake"))
   .settings(
     commonSettings
   )
+
+lazy val sieve = (project in file("sieve"))
+  .settings(
+    commonSettings
+  )
+
 
 lazy val spaceAge = (project in file("space-age"))
   .settings(
