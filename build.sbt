@@ -74,6 +74,15 @@ lazy val helloWorld = (project in file("hello-world"))
     commonSettings
   )
 
+lazy val isogram = (project in file("isogram"))
+  .settings(
+    commonSettings
+  )
+
+
+
+
+
 lazy val leap = (project in file("leap"))
   .settings(
     commonSettings
