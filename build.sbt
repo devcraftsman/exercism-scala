@@ -10,6 +10,11 @@ lazy val accumulate = (project in file("accumulate"))
     commonSettings
   )
 
+lazy val beerSong = (project in file("beer-song"))
+  .settings(
+    commonSettings
+  )
+
 lazy val bob = (project in file("bob"))
   .settings(
     commonSettings
