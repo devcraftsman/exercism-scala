@@ -10,7 +10,6 @@ lazy val accumulate = (project in file("accumulate"))
     commonSettings
   )
 
-
 lazy val bob = (project in file("bob"))
   .settings(
     commonSettings
@@ -32,11 +31,15 @@ lazy val collatzConjecture = (project in file("collatz-conjecture"))
     commonSettings
   )
 
-lazy val differenceOfSquares = (project in file("difference-of-squares"))
+lazy val clock = (project in file("clock"))
   .settings(
     commonSettings
   )
 
+lazy val differenceOfSquares = (project in file("difference-of-squares"))
+  .settings(
+    commonSettings
+  )
 
 
 lazy val etl = (project in file("etl"))
@@ -78,10 +81,6 @@ lazy val isogram = (project in file("isogram"))
   .settings(
     commonSettings
   )
-
-
-
-
 
 lazy val leap = (project in file("leap"))
   .settings(
