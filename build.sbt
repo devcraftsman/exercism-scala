@@ -107,6 +107,11 @@ lazy val phoneNumber = (project in file("phone-number"))
     commonSettings
   )
 
+lazy val proteinTranslation = (project in file("protein-translation"))
+  .settings(
+    commonSettings
+  )
+
 lazy val raindrops = (project in file("raindrops"))
   .settings(
     commonSettings
