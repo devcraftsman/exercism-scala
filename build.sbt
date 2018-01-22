@@ -185,3 +185,10 @@ lazy val triangle = (project in file("triangle"))
     commonSettings
   )
 
+lazy val wordCount = (project in file("word-count"))
+  .settings(
+    commonSettings
+  )
+
+
+
