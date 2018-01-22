@@ -153,6 +153,12 @@ lazy val secretHandshake = (project in file("secret-handshake"))
     commonSettings
   )
 
+lazy val series = (project in file("series"))
+  .settings(
+    commonSettings
+  )
+
+
 lazy val sieve = (project in file("sieve"))
   .settings(
     commonSettings
