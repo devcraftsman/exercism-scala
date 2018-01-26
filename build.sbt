@@ -108,6 +108,12 @@ lazy val matrix = (project in file("matrix"))
     commonSettings
   )
 
+lazy val nucleotideCount = (project in file("nucleotide-count"))
+  .settings(
+    commonSettings
+  )
+
+
 lazy val pangram = (project in file("pangram"))
   .settings(
     commonSettings
