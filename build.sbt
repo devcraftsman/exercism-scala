@@ -15,6 +15,10 @@ lazy val anagram = (project in file("anagram"))
     commonSettings
   )
 
+lazy val allergies = (project in file("allergies"))
+  .settings(
+    commonSettings
+  )
 
 lazy val beerSong = (project in file("beer-song"))
   .settings(
