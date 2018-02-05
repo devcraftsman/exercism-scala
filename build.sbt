@@ -135,6 +135,13 @@ lazy val phoneNumber = (project in file("phone-number"))
     commonSettings
   )
 
+
+lazy val primeFactors = (project in file("prime-factors"))
+  .settings(
+    commonSettings
+  )
+
+
 lazy val proteinTranslation = (project in file("protein-translation"))
   .settings(
     commonSettings
