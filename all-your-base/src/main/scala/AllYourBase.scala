@@ -5,9 +5,7 @@ object AllYourBase {
       || endBase <= 1) {
       None
     } else {
-      val decimal = encodeToDecimal(startBase, repr);
-      val decoded = decodeFromDecimal(decimal, endBase)
-      Some(decoded)
+      Some(decodeFromDecimal(encodeToDecimal(startBase, repr), endBase))
     }
 
 
