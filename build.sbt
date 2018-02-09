@@ -20,6 +20,11 @@ lazy val allergies = (project in file("allergies"))
     commonSettings
   )
 
+lazy val allYourBase = (project in file("all-your-base"))
+  .settings(
+    commonSettings
+  )
+
 lazy val beerSong = (project in file("beer-song"))
   .settings(
     commonSettings
