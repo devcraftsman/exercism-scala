@@ -113,6 +113,10 @@ lazy val kindergartenGarden = (project in file("kindergarten-garden"))
   )
 
 
+lazy val largestSeriesProduct = (project in file("largest-series-product"))
+  .settings(
+    commonSettings
+  )
 
 
 lazy val leap = (project in file("leap"))
