@@ -107,6 +107,14 @@ lazy val isogram = (project in file("isogram"))
     commonSettings
   )
 
+lazy val kindergartenGarden = (project in file("kindergarten-garden"))
+  .settings(
+    commonSettings
+  )
+
+
+
+
 lazy val leap = (project in file("leap"))
   .settings(
     commonSettings
