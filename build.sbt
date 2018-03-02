@@ -161,6 +161,11 @@ lazy val phoneNumber = (project in file("phone-number"))
     commonSettings
   )
 
+lazy val pythagoreanTriplet = (project in file("pythagorean-triplet"))
+  .settings(
+    commonSettings
+  )
+
 
 lazy val primeFactors = (project in file("prime-factors"))
   .settings(
