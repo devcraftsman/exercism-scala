@@ -146,6 +146,11 @@ lazy val pangram = (project in file("pangram"))
     commonSettings
   )
 
+lazy val pascalsTriangle = (project in file("pascals-triangle"))
+  .settings(
+    commonSettings
+  )
+
 lazy val perfectNumbers = (project in file("perfect-numbers"))
   .settings(
     commonSettings
