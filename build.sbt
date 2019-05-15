@@ -1,6 +1,6 @@
 
 lazy val commonSettings = Seq(
-  scalaVersion := "2.12.1",
+  scalaVersion := "2.12.8",
   libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.1" % "test"
 )
 
@@ -216,6 +216,11 @@ lazy val series = (project in file("series"))
 
 
 lazy val sieve = (project in file("sieve"))
+  .settings(
+    commonSettings
+  )
+
+  lazy val saddlePoints = (project in file("saddle-points"))
   .settings(
     commonSettings
   )
