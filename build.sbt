@@ -204,6 +204,11 @@ lazy val robotSimulator = (project in file("robot-simulator"))
     commonSettings
   )
 
+  lazy val  runLengthEncoding = (project in file("run-length-encoding"))
+  .settings(
+    commonSettings
+  )
+
 lazy val scrabbleScore = (project in file("scrabble-score"))
   .settings(
     commonSettings
