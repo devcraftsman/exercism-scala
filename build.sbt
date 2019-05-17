@@ -188,6 +188,11 @@ lazy val raindrops = (project in file("raindrops"))
     commonSettings
   )
 
+  lazy val romanNumerals = (project in file("roman-numerals"))
+  .settings(
+    commonSettings
+  )  
+
 lazy val rnaTranscription = (project in file("rna-transcription"))
   .settings(
     commonSettings
