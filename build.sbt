@@ -214,6 +214,12 @@ lazy val robotSimulator = (project in file("robot-simulator"))
     commonSettings
   )
 
+
+  lazy val saddlePoints = (project in file("saddle-points"))
+  .settings(
+    commonSettings
+  )
+
 lazy val scrabbleScore = (project in file("scrabble-score"))
   .settings(
     commonSettings
@@ -235,10 +241,11 @@ lazy val sieve = (project in file("sieve"))
     commonSettings
   )
 
-  lazy val saddlePoints = (project in file("saddle-points"))
+  lazy val simpleLinkedList = (project in file("simple-linked-list"))
   .settings(
     commonSettings
   )
+
 
 
 lazy val spaceAge = (project in file("space-age"))
