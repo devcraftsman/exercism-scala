@@ -30,6 +30,11 @@ lazy val allYourBase = (project in file("all-your-base"))
     commonSettings
   )
 
+lazy val atbashCipher = (project in file("atbash-cipher"))
+.settings(
+  commonSettings
+)
+
 lazy val beerSong = (project in file("beer-song"))
   .settings(
     commonSettings
