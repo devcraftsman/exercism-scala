@@ -246,12 +246,15 @@ lazy val sieve = (project in file("sieve"))
     commonSettings
   )
 
-  lazy val simpleLinkedList = (project in file("simple-linked-list"))
-  .settings(
-    commonSettings
-  )
+lazy val simpleCipher = (project in file("simple-cipher"))
+.settings(
+  commonSettings
+)
 
-
+lazy val simpleLinkedList = (project in file("simple-linked-list"))
+.settings(
+  commonSettings
+)
 
 lazy val spaceAge = (project in file("space-age"))
   .settings(
